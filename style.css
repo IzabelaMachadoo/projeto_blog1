@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --teal: #33E7DC;
+    --black: #212121;
+    --charcoal: #323232;
+    --purple: #5280e2;
+    --green: #15cdcb;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    background: var(--black);
+}
+
+body, button, input, select, textarea {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    color: white;
+}
+
+h1, h2 {
+    margin: 0;
+    font-weight: 400;
+}
+
+p {
+    font-size: 20px;
+    line-height: 23px;
+    text-align: justify;
+}
+
+button {
+    background: var(--purple);
+    border: 0;
+    border-radius: 15px;
+    padding: 8px 32px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.title-purple {
+    color: var(--purple);
+    font-size: 48px;
+}
+
+.title-green {
+    color: var(--teal);
+    font-size: 48px;
+}
+
+header {
+    height: calc(100vh - 65px);
+    display: flex;
+    align-items: center;
+}
+
+header .container {
+    height: fit-content;
+    padding: 0 100px;
+}
+
+header .container img {
+    display: none;  
+}
+
+header .container button {
+    margin-top: 40px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+    padding: 0 100px;
+    position: sticky;
+    top: 0;
+    background-color: var(--charcoal);
+    
+    z-index: 1;
+}
+
+nav img {
+    height: 50px;
+}
+
+nav ul a {
+    color: var(--teal);
+    font-size: 20px;
+    text-decoration: none;
+    margin: 0 35px;
+}
+
+nav ul a svg {
+    display: none;
+}
+
+.about-me {
+    display: flex;
+    padding: 100px;
+}
+
+.about-me .container {
+    width: 50%;
+    padding-right: 50px;
+}
+
+.about-me .img-container {
+    width: 50%;
+    text-align: center;
+    position: relative;
+}
+
+.about-me .img-container img {
+    width: 70%;
+    height: 100%;
+}
+
+.about-me .img-container .line {
+    width: calc(70% + 50px);
+    height: calc(100% + 50px);
+    border: 1px solid var(--purple);
+
+    position: absolute;
+    top: -25px;
+    left: calc(50% - 70%/2 - 25px);
+}
+
+.about-me .img-container .line.green {
+    transform: rotate(-4.3deg);
+    border-color: var(--green);
+}
+
+.servicos {
+    text-align: center;
+    margin: 150px 0;
+    padding: 0 100px;
+}
+
+.servicos-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 60px auto 0;
+}
+
+.servicos .servicos-container .retangulo-servico {
+    max-width: 360px;
+    background: var(--charcoal);
+    border: 1px solid var(--teal);
+    border-radius: 16px;
+    padding: 40px 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.servicos .servicos-container .retangulo-servico svg {
+    position: relative;
+    margin-bottom: 40px;
+    color: var(--teal);
+    height: 40px;
+    width: 60px;
+    top: calc(50% - 20px);
+}
+
+.servicos .servicos-container .retangulo-servico p {
+    text-align: center;
+    color: lightgrey;
+    font-size: 18px;
+}
+
+.servicos .servicos-container .retangulo-servico h2 {
+    margin-top: 10%;
+    font-size: 24px;
+}
+
+.servicos .servicos-container .retangulo-servico .circle-container {
+    border-radius: 40px;
+    height: 80px;
+    width: 80px;
+    background-color: var(--black);
+}
+
+.curriculo {
+    text-align: center;
+    padding: 0 100px;
+}
+
+.curriculo .container {
+    max-width: 1200px;
+    display: flex;
+    margin: 50px auto;
+}
+
+.curriculo .container .conteudo {
+    width: 100%;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.curriculo .container img {
+    width: 50%;
+    text-align: center;
+    position: relative;
+}
+
+.curriculo .container .conteudo .curriculo-text {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 150px auto;
+    margin-bottom: 50px;
+}
+
+.curriculo .curriculo-text {
+    font-size: 16px;
+}
+
+.contato {
+    max-width: 700px;
+    margin: 150px auto 70px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.contato h1 {
+    width: fit-content;
+    margin: 0 auto 40px;
+}
+
+.contato p {
+    text-align: center;
+}
+
+.contato button {
+    margin: 40px auto;
+}
+
+
+.contato .social-media {
+    max-width: 360px;
+    margin: 50px auto 0;
+    justify-content: space-around;
+    display: flex;
+}
+
+.contato .social-media svg {
+    color: #33E7DC;
+    height: 40px;
+    width: 50px;
+}
+
+
+footer p {
+    text-align: center;
+    color: lightgrey;
+    font-size: 18px;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width:767px) {
+    header .container{
+        width: 100%;
+    }
+
+    header .container img{
+        display: inline;
+        height: 55px;
+        margin-bottom: 75px;
+    }
+
+    nav img{
+        display: none;
+    }
+} 
+
+@media (max-width: 480px) {
+    header .container {
+        padding: 0 40px;
+    }
+
+    nav {
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        top: unset;
+        padding: 0 15px;
+    }
+
+    nav ul a {
+        font-size: 12px;
+    }
+
+    nav ul a svg {
+        display: block;
+        margin: 0 auto 10px;
+    }
+}
